@@ -1,2 +1,0 @@
-# gitsample
-git test
