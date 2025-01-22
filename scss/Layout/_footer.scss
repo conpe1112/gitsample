@@ -1,0 +1,11 @@
+// 変数呼び出し
+@use "../Foundation/variable" as *;
+// メディアクエリ
+@use "../Foundation/mediaQuery" as *;
+
+.l-footer{
+  width: 100%; 
+  @include mq(pc){
+      height: 80px;
+  }
+}

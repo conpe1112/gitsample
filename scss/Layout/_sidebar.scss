@@ -1,0 +1,13 @@
+// 変数呼び出し
+@use "../Foundation/variable" as *;
+// メディアクエリ
+@use "../Foundation/mediaQuery" as *;
+.l-sidebar{
+  @include mq(pc){
+    width: 20%;
+    height: calc(100% - 80px);
+    position: absolute;
+    top: 0;
+    right: 0;   
+  }            
+}

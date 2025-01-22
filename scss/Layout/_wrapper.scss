@@ -1,0 +1,50 @@
+// 変数呼び出し
+@use "../Foundation/variable" as *;
+// メディアクエリ
+@use "../Foundation/mediaQuery" as *;
+
+.l-wrapper{
+  position: relative;
+  width: 100%;
+  height:auto;
+
+  #fadeLayer { 
+      position:fixed;
+      top:0px;
+      left:0px;
+      width:100%;
+      height:100%;
+      background-color:$black;
+      opacity:0.5;
+      visibility:hidden;
+      z-index:250;
+
+      &.is-open{
+          visibility: visible;
+          animation: fadeIn 1.0s linear forwards;
+
+          @keyframes fadeIn {
+              0% {
+                  opacity: 0;
+              }
+              100% {
+                  opacity: 0.5;
+              }
+          }
+
+          @include mq(tab){
+              background-color: $dark-gray;
+              opacity: 0.8;
+
+              @keyframes fadeIn {
+                  0% {
+                      opacity: 0;
+                  }
+                  100% {
+                      opacity: 0.8;
+                  }
+              }
+          }
+      }//#fadelayer.is-open
+  }//#fadelayer    
+}//l-wrapper
