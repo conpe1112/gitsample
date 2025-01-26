@@ -116,8 +116,9 @@
   }//.p-main__article--EatIn
 
 .p-TakeOut__list{
-  height: auto;
+  height: 80px;
   width: auto;
+  overflow: scroll;
   background-color: $first-white;
   opacity: 0.8;
   margin: 10px;
