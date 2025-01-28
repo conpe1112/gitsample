@@ -100,7 +100,7 @@ li {
 }
 
 .l-TakeOut__section {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
@@ -662,8 +662,10 @@ li {
 .p-main__article--TakeOut {
   position: relative;
   width: auto;
-  height: 114vh;
+  min-height: 450px;
+  height: auto;
   margin: 20px;
+  padding: 10px 15px;
   background-image: url(/img/takeout.jpg);
   background-size: cover;
   background-position: center;
@@ -671,23 +673,23 @@ li {
 @media (min-width: 600px) {
   .p-main__article--TakeOut {
     width: 100%;
-    height: 85vh;
     margin: 30px;
+    min-height: 200px;
   }
 }
 @media (min-width: 1025px) {
   .p-main__article--TakeOut {
-    height: 103vh;
+    padding: 10px 15px;
     margin: 60px 45px 70px 55px;
   }
 }
 .p-main__article--TakeOut h3 {
   position: relative;
-  padding: 20px 15px;
+  padding: 0 0 150px 0;
 }
 @media (min-width: 600px) {
   .p-main__article--TakeOut h3 {
-    padding: 11px 8px;
+    padding: 0 0 200px 0;
   }
 }
 .p-main__article--TakeOut h3 > a {
@@ -732,8 +734,10 @@ li {
   position: relative;
   align-items: flex-end;
   width: auto;
-  height: 114vh;
+  min-height: 450px;
+  height: auto;
   margin: 0px 20px 45px 20px;
+  padding: 10px 15px;
   background-image: url(/img/eatin.png);
   background-size: cover;
   background-position: center;
@@ -741,23 +745,21 @@ li {
 @media (min-width: 600px) {
   .p-main__article--EatIn {
     width: 100%;
-    height: 85vh;
     margin: 30px 30px 30px 0;
   }
 }
 @media (min-width: 1025px) {
   .p-main__article--EatIn {
-    height: 103vh;
     margin: 59px 43px 70px 0px;
   }
 }
 .p-main__article--EatIn h3 {
   position: relative;
-  padding: 20px 15px;
+  padding: 0 0 150px 0;
 }
 @media (min-width: 600px) {
   .p-main__article--EatIn h3 {
-    padding: 11px 8px;
+    padding: 0 0 200px 0;
   }
 }
 .p-main__article--EatIn h3 > a {
@@ -800,13 +802,15 @@ li {
 }
 
 .p-TakeOut__list {
-  height: 80px;
+  min-height: 80px;
   width: auto;
-  overflow: scroll;
   background-color: #FFFFFF;
   opacity: 0.8;
-  margin: 10px;
+  margin: 0 0 10px 0;
   padding: 10px;
+}
+.p-TakeOut__list:nth-last-of-type(1) {
+  margin: 0;
 }
 .p-TakeOut__list > h4 {
   font-size: 1.3rem;
@@ -939,12 +943,13 @@ li {
   }
 }
 .p-main__map__content > p {
-  height: 250px;
+  height: auto;
+  min-height: 250px;
   color: #FFFFFF;
   font-size: 0.85rem;
   font-weight: 600;
   line-height: 2.4;
-  overflow: scroll;
+  overflow: hidden;
   margin: 35px 0px 0px 0px;
 }
 @media (min-width: 600px) {

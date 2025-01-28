@@ -83,12 +83,13 @@
       }  
     }
     >p{
-      height: 250px;
+      height: auto;
+      min-height: 250px;
       color:$first-white;
       font-size: 0.85rem;
       font-weight: 600;
       line-height: 2.4;
-      overflow: scroll;
+      overflow: hidden;
       margin: 35px 0px 0px 0px;
       @include mq(tab){
         height: 160px;
