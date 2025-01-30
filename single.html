@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9c4b047b8f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/jquery-3.7.0.min.js"></script>
+  <script src="/js/script.js"></script>
+  <title>ハンバーガー</title>
+</head>
+<body>
+    <div class="l-wrapper">
+      <div id="fadeLayer"></div>
+      <div class="c-button--menu">
+        <button class="c-button--menu is-menu">Menu</button>
+        <button class="c-button--menu__close is-menu"></button>
+      </div>
+      <!--header_area-->
+      <header class="l-header p-header">
+        <h1 class="p-header__title"><a href="#">Hamburger</a></h1>
+        <form class="p-header__search">
+          <input class="p-header__search-inbox fas fa-search" placeholder="&#xf002;" type="search">
+          <input class="c-button__search-btn" type="submit" value="検索">
+        </form>  
+      </header>
+      <!--header_area-->
+
+      <!--nav_area-->
+      <section class="l-sidebar p-sidebar">
+        <nav class="p-global-nav">
+          <p class="p-global-nav__title">Menu</p>
+          <ul class="p-global-nav__menu">
+            <li class="p-global-nav__menu__title"><a href="#">バーガー</a>
+              <ul class="p-global-nav__menu__list">
+                <li class="p-global-nav__menu__list__item"><a href="#">ハンバーガー</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">チーズバーガー</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">テリヤキバーガー</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">アボカドバーガー</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">フィッシュバーガー</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">チキンバーガー</a></li>
+              </ul>
+            </li>
+            <li class="p-global-nav__menu__title"><a href="#">サイド</a>
+              <ul class="p-global-nav__menu__list">
+                <li class="p-global-nav__menu__list__item"><a href="#">ポテト</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">サラダ</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">ナゲット</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">コーン</a></li>
+              </ul>
+            </li>
+            <li class="p-global-nav__menu__title"><a href="#">ドリンク</a>
+              <ul class="p-global-nav__menu__list">
+                <li class="p-global-nav__menu__list__item"><a href="#">コーラ</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">ファンタ</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">オレンジ</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">アップル</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">紅茶（Ice/Hot）</a></li>
+                <li class="p-global-nav__menu__list__item"><a href="#">コーヒー（Ice/Hot）</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!--nav_area-->
+
+      <!--main_area-->
+      <main class="l-main p-main">
+        <div class="p-main-img">
+          <h2>ダミーサイト</h2>
+        </div>
+        
+      </main>
+      <!--main_area-->
+      
+      <!--footer_area-->
+      <footer class="l-footer p-footer">
+        <div class="p-footer__information">
+         <a class="p-footer__information__shop" href="#">ショップ情報</a>
+         <a class="p-footer__information__history" href="#">ヒストリー</a>
+        </div>
+        <p class="p-footer__copyright"><small>Copyright : RaiseTech</small></p>     
+      </footer>
+      <!--footer_area-->
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 $breakpoints: (
 	"tab": "(min-width: 600px)",
-	"pc": "(min-width: 1025px)",
+	"pc": "(min-width: 1024px)",
 );
 
 @mixin mq($breakpoint:tab) {
